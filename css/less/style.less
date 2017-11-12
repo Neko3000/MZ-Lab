@@ -1,5 +1,5 @@
-@import "common";
 @import "color";
+@import "common";
 @import "layout";
 @import "font";
 
@@ -154,5 +154,46 @@
         opacity: 0.5;
 
         z-index: 5;
+    }
+}
+
+.brief-intros{
+    h2{
+        color:@Deep-Grey-Origin;
+    }
+    h4{
+        color:@Heavy-Grey-Origin;
+
+        line-height: 1.5;
+        letter-spacing: 2.1px;
+    }
+}
+
+.academics-intros{
+    .academics-intros-single-subject{
+        h3{
+            color:@Heavy-Grey-Hover;
+        }
+        h4{
+            color:@Heavy-Grey-Origin;
+
+            line-height: 1.5;
+        }
+    }
+    .academics-intros-single-subject + .academics-intros-single-subject{
+        margin-top:60px;
+    }
+}
+
+.academics-example{
+    background-color: @Deep-Grey-Origin;
+    h4{
+        color:@Light-Grey-Origin;
+    }
+    P{
+        color:@Light-Grey-Hover;
+    }
+    img{
+        filter: drop-shadow(8px 4px 6px #424242)
     }
 }
