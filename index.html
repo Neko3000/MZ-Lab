@@ -9,11 +9,52 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/less/style.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+        <div class="main-navbar">
+                <div class="navbar-visiable-area">
+                    <div class="navbar-header">
+                        
+                    </div>
+                    <div class="navbar-body">
+                        <ul>
+                            <li class="padding-left-30px padding-right-15px"><a href=""><i class="margin-right-10px fa fa-home"></i>ホームページ</a></li>
+                            <li class="padding-left-30px padding-right-15px"><a href=""><i class="margin-right-10px fa fa-id-card"></i>成員構成</a></li>
+                            <li class="padding-left-30px padding-right-15px"><a href=""><i class="margin-right-10px fa fa-cube"></i>研究実績</a></li>
+                            <li class="padding-left-30px padding-right-15px"><a href=""><i class="margin-right-10px fa fa-map-marker"></i>アクセス</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-footer">
+                        <div type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-invisiable-area">
+                            <img src="img/toggler.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-invisiable-area">
+                    <ul>
+                        <li class="text-center"><a href="#"><i class="margin-right-10px fa fa-home"></i>ホームページ</a></li>
+                        <li class="text-center"><a href="#"><i class="margin-right-10px fa fa-id-card"></i>成員構成</a></li>
+                        <li class="text-center"><a href="#"><i class="margin-right-10px fa fa-cube"></i>研究実績</a></li>
+                        <li class="text-center"><a href="#"><i class="margin-right-10px fa fa-map-marker"></i>アクセス</a></li>
+                    </ul>
+                </div>
+        </div>
+        <section class="main-board">
+            <img src="img/board-title.png" alt="">
+            <div class="black-layer"></div>
+            <video autoplay="autoplay" loop="loop" src="content/video-background-coding.mp4"></video>
+        </section>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.viewportchecker.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/animation-behaviors.js"></script>
     </body>
 </html>

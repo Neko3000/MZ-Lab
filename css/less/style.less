@@ -1,0 +1,158 @@
+@import "common";
+@import "color";
+@import "layout";
+@import "font";
+
+.main-navbar{
+    background-color: @Deep-Grey-Origin;
+    padding: 0 15px 0 15px;
+
+    .navbar-visiable-area{
+        margin: 0 0;
+        height: 50px;
+        .navbar-header{
+            display: inline-block;
+            float: left;
+        }
+        .navbar-body{
+            display: inline-block;
+            float: left;
+            ul{
+                display: inline-block;
+                float: left;
+                >li{
+                    float:left;
+                    padding-top:16px;
+                    padding-bottom: 16px;
+
+                    //adjusted font-size for font-awesome
+                    &:nth-child(1){
+                        a i{
+                            font-size: 18px;
+                        }
+                    }
+                    &:nth-child(2){
+                        a i{
+                            font-size: 16px;
+                        }
+                    }
+                    &:nth-child(3){
+                        a i{
+                            font-size: 16px;
+                        }
+                    }
+                    &:nth-child(4){
+                        a i{
+                            font-size: 18px;
+                        }
+                    }
+
+                    
+                    a{
+                        display: block;
+                        line-height: 1;
+
+                        font-size: 16px;
+                        color:@Medium-Grey-Origin;
+
+                        -webkit-transition: color 0.5s ease;
+                        -moz-transition: color 0.5s ease;
+                        transition: color 0.5s ease;
+                        &:hover{
+                            color:@Light-Grey-Origin;
+                            
+                            text-decoration: none;
+
+                            i{
+                                color:@Light-Grey-Origin;
+                            }
+                        }
+
+                        i{
+                            color:@Medium-Grey-Origin;
+
+                            -webkit-transition: color 0.5s ease;
+                            -moz-transition: color 0.5s ease;
+                            transition: color 0.5s ease;
+                        }
+                    }
+                }
+            }
+            @media(max-width:768px)
+            {
+                display: none !important;;
+            }
+         }
+         .navbar-footer{
+            display: inline-block;
+            float: right;
+
+            .navbar-toggle{
+                background: none;
+
+                padding: 0;
+                margin: 10px 0 10px 0;
+                opacity: 0.7;
+                img{
+                    width: 37px;
+                    height: 28px;
+                }
+            }
+         }
+    }
+    .navbar-collapse{
+        ul{
+            display: block;
+            >li{
+                display: block;
+                height: 50px;
+                padding-top:17px;
+                padding-bottom: 17px;
+                a{
+                    display: block;
+                    line-height: 1;
+
+                    font-size: 16px;
+                    color:@Medium-Grey-Origin;
+
+                    -webkit-transition: color 0.5s ease;
+                    -moz-transition: color 0.5s ease;
+                    transition: color 0.5s ease;
+                    &:hover{
+                        color:@Light-Grey-Origin;
+                        
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    #navbar-invisiable-area{
+        @media(min-width:768px)
+        {
+            display: none !important;
+        }
+    }
+}
+
+.main-board{
+    position: relative;
+    height: 600px;
+
+    overflow: hidden;
+    img{
+        position: absolute;
+        margin-left: -287px;
+        margin-top: -152px;
+
+        left: 50%;
+        top: 50%;
+
+        z-index: 10;
+    }
+    .black-layer{
+        opacity: 0.5;
+
+        z-index: 5;
+    }
+}
