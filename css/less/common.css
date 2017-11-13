@@ -26,6 +26,18 @@ small {
   margin-left: auto;
   margin-right: auto;
 }
+.center-img-container {
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+}
+.center-img-container .center-img-object {
+  position: absolute;
+  margin-left: -683px;
+  margin-top: -400px;
+  left: 50%;
+  top: 50%;
+}
 .text-left {
   text-align: left;
 }
@@ -40,4 +52,12 @@ small {
   width: 100%;
   height: 100%;
   background-color: black;
+}
+.mask-circle {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.inline-block {
+  display: inline-block;
 }

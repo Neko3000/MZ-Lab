@@ -5,11 +5,16 @@
 
 .main-navbar{
     background-color: @Deep-Grey-Origin;
-    padding: 0 15px 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    //clear the influence of float for next section
+    padding-top: 2px;
+    padding-bottom: 2px;
 
     .navbar-visiable-area{
         margin: 0 0;
-        height: 50px;
+        height: 48px;
         .navbar-header{
             display: inline-block;
             float: left;
@@ -22,8 +27,8 @@
                 float: left;
                 >li{
                     float:left;
-                    padding-top:16px;
-                    padding-bottom: 16px;
+                    padding-top:15px;
+                    padding-bottom: 15px;
 
                     //adjusted font-size for font-awesome
                     &:nth-child(1){
@@ -194,6 +199,96 @@
         color:@Light-Grey-Hover;
     }
     img{
-        filter: drop-shadow(8px 4px 6px #424242)
+        position: relative;
+        filter: drop-shadow(8px 4px 6px #424242);
+
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &:hover{
+            top: -3px;
+            left:-3px;
+
+            filter: drop-shadow(15px 10px 10px #424242);
+        }
+    }
+}
+
+.lab-environnment{
+    h3{
+        color: @Heavy-Grey-Hover;
+        line-height:1.5;
+    }
+    h4{
+        color: @Heavy-Grey-Origin;
+        line-height:1.5;
+    }
+}
+
+.lab-language{
+    background-color: @Deep-Grey-Origin;
+    h4{
+        color:@Light-Grey-Origin;
+    }
+    P{
+        color:@Light-Grey-Hover;
+    }
+    .cube-single-line-container{
+        .cube-single-line-object{
+            img{
+                padding: 11px 11px;
+            }
+        }
+    }
+}
+.one-sentence{
+    h4{
+        color:@Heavy-Grey-Hover;
+    }
+}
+
+.main-footer{
+    background-color: @Deep-Grey-Origin;
+    
+    span,small{
+        color:@Medium-Grey-Origin;
+    }
+}
+
+//page-member
+.personal-card-area{
+    background-color: @Light-Grey-Origin;
+    .single-personal-card{
+        background-color: white;
+        .single-personal-card-header{
+            img{
+                width:60px;
+                height:60px;
+            }
+        }
+        .single-personal-card-body{
+            pre,small{
+                display: block;
+
+                color: @Medium-Grey-Origin;
+            }
+            small{
+                line-height:1;
+            }
+            h4{
+                display: block;
+
+                color: @Medium-Grey-Hover;
+                margin-bottom:10px;
+            }
+        }
+        .single-personal-card-footer{
+            small{
+                display: block;
+
+                color: @Medium-Grey-Hover;
+                line-height:1.1;
+            }
+        }
     }
 }

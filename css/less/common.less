@@ -24,6 +24,21 @@ h1,h2,h3,h4,h5,span,p,big,small{
     }
 }
 
+//center-img size:1366x800
+.center-img-container{
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    .center-img-object{
+        position: absolute;
+        margin-left:-683px;
+        margin-top:-400px;
+        
+        left: 50%;
+        top:50%;
+    }
+}
+
 //text-align
 .text-left{
     text-align: left;
@@ -41,4 +56,15 @@ h1,h2,h3,h4,h5,span,p,big,small{
     width: 100%;
     height: 100%;
     background-color: black;
+}
+
+.mask-circle{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+//display
+.inline-block{
+    display: inline-block;
 }
