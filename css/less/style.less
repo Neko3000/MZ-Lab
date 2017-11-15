@@ -5,19 +5,44 @@
 
 .main-navbar{
     background-color: @Deep-Grey-Origin;
-    padding-left: 15px;
-    padding-right: 15px;
 
     //clear the influence of float for next section
     padding-top: 2px;
     padding-bottom: 2px;
 
+    &:hover{
+        .navbar-visiable-area{
+            .navbar-header{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
     .navbar-visiable-area{
         margin: 0 0;
         height: 48px;
         .navbar-header{
             //display: inline-block;
             float: left;
+            img{
+                width: 54px;
+                height: 50px;
+
+                opacity: 0.3;
+                
+                -webkit-transition: opacity 0.5s ease;
+                -moz-transition: opacity 0.5s ease;
+                transition: opacity 0.5s ease;
+            }
+        }
+        .navbar-splitter{
+            float: left;
+
+            margin: 15px 0;
+            height: 20px;
+
+            border-right: #979797 1px solid;
         }
         .navbar-body{
             //display: inline-block;

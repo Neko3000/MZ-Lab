@@ -320,10 +320,11 @@ pre {
 }
 .main-navbar {
   background-color: #4f4f4f;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 2px;
   padding-bottom: 2px;
+}
+.main-navbar:hover .navbar-visiable-area .navbar-header img {
+  opacity: 1;
 }
 .main-navbar .navbar-visiable-area {
   margin: 0 0;
@@ -331,6 +332,20 @@ pre {
 }
 .main-navbar .navbar-visiable-area .navbar-header {
   float: left;
+}
+.main-navbar .navbar-visiable-area .navbar-header img {
+  width: 54px;
+  height: 50px;
+  opacity: 0.3;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.main-navbar .navbar-visiable-area .navbar-splitter {
+  float: left;
+  margin: 15px 0;
+  height: 20px;
+  border-right: #979797 1px solid;
 }
 .main-navbar .navbar-visiable-area .navbar-body {
   float: left;
