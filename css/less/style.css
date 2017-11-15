@@ -61,6 +61,10 @@ small {
 .inline-block {
   display: inline-block;
 }
+.element-point {
+  display: inline-block;
+  border-radius: 50%;
+}
 .padding-top-5px {
   padding-top: 5px;
 }
@@ -275,6 +279,16 @@ pre {
   font-family: "Yu Mincho", "Mrs Eaves", serif, sans-serif;
   font-weight: 500;
 }
+@font-face {
+  font-family: "Yu Mincho";
+  src: url('../../fonts/yumin.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Mrs Eaves";
+  src: url('../../fonts/MrsEavesRoman.ttf') format('truetype');
+  font-weight: 500;
+}
 h1 {
   font-size: 48px;
 }
@@ -316,15 +330,12 @@ pre {
   height: 48px;
 }
 .main-navbar .navbar-visiable-area .navbar-header {
-  display: inline-block;
   float: left;
 }
 .main-navbar .navbar-visiable-area .navbar-body {
-  display: inline-block;
   float: left;
 }
 .main-navbar .navbar-visiable-area .navbar-body ul {
-  display: inline-block;
   float: left;
 }
 .main-navbar .navbar-visiable-area .navbar-body ul > li {
@@ -372,13 +383,19 @@ pre {
   }
 }
 .main-navbar .navbar-visiable-area .navbar-footer {
-  display: inline-block;
   float: right;
 }
 .main-navbar .navbar-visiable-area .navbar-footer .navbar-toggle {
   background: none;
+  cursor: pointer;
   padding: 0;
   margin: 10px 0 10px 0;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity color 0.5s ease;
+  transition: opacity color 0.5s ease;
+}
+.main-navbar .navbar-visiable-area .navbar-footer .navbar-toggle:hover {
   opacity: 0.7;
 }
 .main-navbar .navbar-visiable-area .navbar-footer .navbar-toggle img {
@@ -458,15 +475,17 @@ pre {
 }
 .academics-example img {
   position: relative;
-  filter: drop-shadow(8px 4px 6px #424242);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(8px 4px 6px rgba(50, 50, 50, 0.5));
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .academics-example img:hover {
-  top: -3px;
-  left: -3px;
-  filter: drop-shadow(15px 10px 10px #424242);
+  top: -8px;
+  left: -8px;
+  filter: drop-shadow(20px 16px 8px rgba(50, 50, 50, 0.5));
 }
 .lab-environnment h3 {
   color: #707070;
@@ -485,8 +504,22 @@ pre {
 .lab-language P {
   color: #dcdcdc;
 }
-.lab-language .cube-single-line-container .cube-single-line-object img {
+.cube .cube-single-line-container .cube-single-line-object img {
   padding: 11px 11px;
+}
+.cube .cube-single-line-container .cube-single-line-object .img-lang {
+  position: relative;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(4px 2px 6px rgba(50, 50, 50, 0.5));
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cube .cube-single-line-container .cube-single-line-object .img-lang:hover {
+  top: -3px;
+  left: -3px;
+  filter: drop-shadow(8px 6px 6px rgba(50, 50, 50, 0.44));
 }
 .one-sentence h4 {
   color: #707070;
@@ -498,11 +531,28 @@ pre {
 .main-footer small {
   color: #c5c5c5;
 }
+.main-footer strong {
+  color: #f8f8f8;
+  font-style: normal;
+  font-weight: 500;
+}
 .personal-card-area {
   background-color: #f8f8f8;
 }
 .personal-card-area .single-personal-card {
+  position: relative;
+  top: 0;
+  left: 0;
   background-color: white;
+  box-shadow: #b9b9b980 4px 4px 6px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.personal-card-area .single-personal-card:Hover {
+  top: -10px;
+  left: -5px;
+  box-shadow: #b9b9b940 20px 15px 10px;
 }
 .personal-card-area .single-personal-card .single-personal-card-header img {
   width: 60px;
@@ -513,16 +563,66 @@ pre {
   display: block;
   color: #c5c5c5;
 }
-.personal-card-area .single-personal-card .single-personal-card-body small {
-  line-height: 1;
+.personal-card-area .single-personal-card .single-personal-card-body pre {
+  margin-bottom: 4px;
 }
 .personal-card-area .single-personal-card .single-personal-card-body h4 {
   display: block;
   color: #a4a4a4;
   margin-bottom: 10px;
 }
+.personal-card-area .single-personal-card .single-personal-card-body small {
+  line-height: 1;
+}
 .personal-card-area .single-personal-card .single-personal-card-footer small {
   display: block;
   color: #a4a4a4;
-  line-height: 1.1;
+  line-height: 1.3;
+}
+.academic-card-area {
+  background-color: #f8f8f8;
+}
+.academic-card-area .element-point {
+  background-color: #a4a4a4;
+  width: 7px;
+  height: 7px;
+}
+.academic-card-area .academic-card-single-year .academic-card-year-marker h2 {
+  color: #a4a4a4;
+}
+.academic-card-area .academic-card-single-year .element-point {
+  position: relative;
+  left: 31px;
+}
+.academic-card-area .single-academic-card {
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 4px 6px #b9b9b980;
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.academic-card-area .single-academic-card:Hover {
+  top: -10px;
+  left: -5px;
+  box-shadow: #b9b9b940 20px 15px 10px;
+}
+.academic-card-area .single-academic-card .single-academic-card-header h4 {
+  color: #a4a4a4;
+}
+.academic-card-area .single-academic-card .single-academic-card-header em {
+  font-style: normal;
+  font-size: 24px;
+}
+.academic-card-area .single-academic-card .single-academic-card-body .center-img-container {
+  height: 100px;
+}
+.academic-card-area .single-academic-card .single-academic-card-body .center-img-container .center-img-object {
+  margin-left: -510px;
+  margin-top: -50px;
+}
+.academic-card-area .single-academic-card .single-academic-card-footer big {
+  color: #a4a4a4;
 }

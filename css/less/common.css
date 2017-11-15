@@ -61,3 +61,7 @@ small {
 .inline-block {
   display: inline-block;
 }
+.element-point {
+  display: inline-block;
+  border-radius: 50%;
+}
