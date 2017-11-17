@@ -470,6 +470,10 @@ pre {
   line-height: 1.5;
   letter-spacing: 2.1px;
 }
+.brief-intros strong {
+  font-size: 30px;
+  font-weight: 500;
+}
 .academics-intros .academics-intros-single-subject h3 {
   color: #707070;
 }
