@@ -279,16 +279,6 @@ pre {
   font-family: "Yu Mincho", "Mrs Eaves", serif, sans-serif;
   font-weight: 500;
 }
-@font-face {
-  font-family: "Yu Mincho";
-  src: url('../../fonts/yumin.ttf') format('truetype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Mrs Eaves";
-  src: url('../../fonts/MrsEavesRoman.ttf') format('truetype');
-  font-weight: 500;
-}
 h1 {
   font-size: 48px;
 }
@@ -641,4 +631,44 @@ pre {
 }
 .academic-card-area .single-academic-card .single-academic-card-footer big {
   color: #a4a4a4;
+}
+.contact-card-area {
+  background-color: #f8f8f8;
+}
+.contact-card-area .contact-card {
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 4px 6px #b9b9b980;
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contact-card-area .contact-card:Hover {
+  top: -10px;
+  left: -5px;
+  box-shadow: #b9b9b940 20px 15px 10px;
+}
+.contact-card-area .contact-card .center-img-container {
+  height: 340px;
+}
+.contact-card-area .contact-card .center-img-container .center-img-object {
+  margin-left: -472px;
+  margin-top: -170px;
+  left: 50%;
+  top: 50%;
+}
+.contact-card-area .contact-card h4 {
+  color: #8a8a8a;
+}
+.contact-card-area .contact-card p,
+.contact-card-area .contact-card small {
+  color: #a4a4a4;
+}
+.contact-card-area .contact-card small {
+  display: block;
+}
+.contact-card-area .contact-card small .fa-envelope {
+  font-size: 11px;
 }
