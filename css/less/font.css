@@ -9,7 +9,7 @@ small,
 li,
 a,
 pre {
-  font-family: "Yu Mincho", "Mrs Eaves", serif, sans-serif;
+  font-family: "Yu Mincho", "Mrs Eaves", 'MS PGothic', Osaka, Arial, serif, sans-serif;
   font-weight: 500;
 }
 h1 {
