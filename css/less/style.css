@@ -276,7 +276,7 @@ small,
 li,
 a,
 pre {
-  font-family: "Yu Mincho", "Mrs Eaves", serif, sans-serif;
+  font-family: "Yu Mincho", "Mrs Eaves", 'MS PGothic', Osaka, Arial, serif, sans-serif;
   font-weight: 500;
 }
 h1 {
@@ -631,6 +631,49 @@ pre {
 }
 .academic-card-area .single-academic-card .single-academic-card-footer big {
   color: #a4a4a4;
+}
+.hover-show-info {
+  position: relative;
+  background-color: transparent;
+  padding: 0 0;
+  color: #a4a4a4;
+}
+.hover-show-info .info-card {
+  display: none;
+  position: absolute;
+  top: -160px;
+  background-color: white;
+  border: #dcdcdc 1px solid;
+  width: 318px;
+  height: 150px;
+}
+.hover-show-info .info-card .info-card-header img {
+  width: 60px;
+  height: 60px;
+}
+.hover-show-info .info-card .info-card-body pre,
+.hover-show-info .info-card .info-card-body small {
+  display: block;
+  color: #c5c5c5;
+}
+.hover-show-info .info-card .info-card-body pre {
+  margin-bottom: 4px;
+}
+.hover-show-info .info-card .info-card-body h4 {
+  display: block;
+  color: #a4a4a4;
+  margin-bottom: 10px;
+}
+.hover-show-info .info-card .info-card-body small {
+  line-height: 1;
+}
+.hover-show-info .info-card .info-card-footer small {
+  display: block;
+  color: #a4a4a4;
+  line-height: 1.3;
+}
+.hover-show-info:hover .info-card {
+  display: inline-block;
 }
 .contact-card-area {
   background-color: #f8f8f8;

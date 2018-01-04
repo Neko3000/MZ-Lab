@@ -440,6 +440,65 @@
     }
 }
 
+.hover-show-info{
+    position: relative;
+
+    background-color: transparent;
+    padding: 0 0;
+
+    color:@Medium-Grey-Hover;
+    .info-card{
+        display:none;
+
+        position: absolute;
+        top:-160px;
+        background-color: white;
+        border: @Light-Grey-Hover 1px solid;
+
+        width: 318px;
+        height: 150px;
+
+        .info-card-header{
+            img{
+                width:60px;
+                height:60px;
+            }
+        }
+        .info-card-body{
+            pre,small{
+                display: block;
+
+                color: @Medium-Grey-Origin;
+            }
+            pre{
+                margin-bottom:4px;
+            }
+            h4{
+                display: block;
+
+                color: @Medium-Grey-Hover;
+                margin-bottom:10px;
+            }
+            small{
+                line-height:1;
+            }
+        }
+        .info-card-footer{
+            small{
+                display: block;
+
+                color: @Medium-Grey-Hover;
+                line-height:1.3;
+            }
+        }
+    }
+    &:hover{
+        .info-card{
+            display: inline-block;
+        }
+    }
+}
+
 //page-contact
 .contact-card-area{
     background-color: @Light-Grey-Origin;
